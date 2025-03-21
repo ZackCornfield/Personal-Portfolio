@@ -1,0 +1,90 @@
+/* Base styles */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  
+  /* Variants */
+  .btn.default {
+    background: #007bff;
+    color: white;
+  }
+  .btn.default:hover {
+    background: #0056b3;
+  }
+  
+  .btn.destructive {
+    background: #dc3545;
+    color: white;
+  }
+  .btn.destructive:hover {
+    background: #b52b3b;
+  }
+  
+  .btn.outline {
+    background: transparent;
+    border: 1px solid #ccc;
+    color: #333;
+  }
+  .btn.outline:hover {
+    background: #f0f0f0;
+  }
+  
+  .btn.secondary {
+    background: #6c757d;
+    color: white;
+  }
+  .btn.secondary:hover {
+    background: #5a6268;
+  }
+  
+  .btn.ghost {
+    background: transparent;
+    color: #007bff;
+  }
+  .btn.ghost:hover {
+    background: rgba(0, 123, 255, 0.1);
+  }
+  
+  .btn.link {
+    background: none;
+    color: #007bff;
+    text-decoration: underline;
+  }
+  .btn.link:hover {
+    color: #0056b3;
+  }
+  
+  /* Sizes */
+  .btn.default {
+    padding: 10px 16px;
+    height: 40px;
+  }
+  
+  .btn.sm {
+    padding: 8px 12px;
+    height: 36px;
+  }
+  
+  .btn.lg {
+    padding: 12px 20px;
+    height: 48px;
+  }
+  
+  .btn.icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

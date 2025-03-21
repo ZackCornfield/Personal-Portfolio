@@ -1,0 +1,15 @@
+.separator {
+    background-color: var(--border-color); /* Replace with your actual border color variable or hex code */
+    flex-shrink: 0;
+  }
+  
+  .horizontal {
+    height: 1px;
+    width: 100%;
+  }
+  
+  .vertical {
+    width: 1px;
+    height: 100%;
+  }
+  
