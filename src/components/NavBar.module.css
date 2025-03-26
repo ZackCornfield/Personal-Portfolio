@@ -1,0 +1,124 @@
+/* Navbar Styles */
+.navbar {
+  position: relative;
+  z-index: 40;
+  width: 100%;
+  padding: 1.5rem; /* Padding for the navbar */
+  box-sizing: border-box;
+}
+
+.nav-container {
+  max-width: 90%; /* Reduce width to bring content towards center */
+  margin: 0 auto; /* Center the nav-container */
+  display: flex;
+  justify-content: space-between; /* Center elements */
+  align-items: center;
+}
+
+.nav-title {
+  color: var(--foreground);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: none;
+  gap: 1rem;
+  list-style-type: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem; /* Add padding for smaller screens */
+  }
+}
+
+/* DrawOutlineButton Styles */
+.outline-button {
+  position: relative;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-width: 5rem; /* Ensure consistent button size */
+  padding: 0.25rem 1rem;
+  color: var(--foreground, #ffbf47);
+  transition: color 0.4s ease;
+  background-color: transparent;
+  border: none;
+  font-family: var(--font-satoshi);
+  font-size: 1.125rem; 
+}
+
+.outline-button a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%; /* Ensure the link spans the button */
+  text-align: center; /* Center the text */
+}
+
+.outline-button:hover {
+  font-weight: 500;
+}
+
+/* Borders for button hover effect */
+.border-top,
+.border-right,
+.border-bottom,
+.border-left {
+  position: absolute;
+  background-color: var(--foreground, #ffbf47);
+  transition: all 0.1s ease;
+}
+
+.border-top {
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+}
+
+.border-right {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0;
+}
+
+.border-bottom {
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  transition-delay: 0.15s;
+}
+
+.border-left {
+  bottom: 0;
+  left: 0;
+  width: 2px;
+  height: 0;
+  transition-delay: 0.25s;
+}
+
+.outline-button:hover .border-top {
+  width: 100%;
+}
+
+.outline-button:hover .border-right {
+  height: 100%;
+}
+
+.outline-button:hover .border-bottom {
+  width: 100%;
+}
+
+.outline-button:hover .border-left {
+  height: 100%;
+}

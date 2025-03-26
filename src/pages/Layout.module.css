@@ -1,0 +1,33 @@
+.layout {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  max-width: 1280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: var(--background);
+  font-family: "Overused", sans-serif;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    gap: 7rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .layout {
+    gap: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .layout {
+    gap: 4rem;
+  }
+}

@@ -4,7 +4,7 @@
     line-height: 1.25rem; /* equivalent to leading-none */
   }
   
-  .peerDisabled {
+  .peer-disabled {
     cursor: not-allowed;
     opacity: 0.7;
   }

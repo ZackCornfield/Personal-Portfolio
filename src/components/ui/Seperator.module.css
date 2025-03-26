@@ -1,5 +1,5 @@
 .separator {
-    background-color: var(--border-color); /* Replace with your actual border color variable or hex code */
+    background-color: var(--border); /* Replace with your actual border color variable or hex code */
     flex-shrink: 0;
   }
   

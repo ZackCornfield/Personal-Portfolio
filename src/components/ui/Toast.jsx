@@ -9,7 +9,7 @@ const ToastViewport = React.forwardRef(
   ({ className, ...props }, ref) => (
     <ToastPrimitives.Viewport
       ref={ref}
-      className={`${styles.toastViewport} ${className}`}
+      className={`${styles["toast-viewport"]} ${className}`}
       {...props}
     />
   )
@@ -18,11 +18,11 @@ ToastViewport.displayName = ToastPrimitives.Viewport.displayName;
 
 const Toast = React.forwardRef(
   ({ className, variant = "default", ...props }, ref) => {
-    const variantClass = variant === "destructive" ? styles.toastDestructive : styles.toastDefault;
+    const variantClass = variant === "destructive" ? styles["destructive"] : styles["default"];
     return (
       <ToastPrimitives.Root
         ref={ref}
-        className={`${styles.toast} ${variantClass} ${className}`}
+        className={`${styles["toast"]} ${variantClass} ${className}`}
         {...props}
       />
     );
@@ -34,7 +34,7 @@ const ToastAction = React.forwardRef(
   ({ className, ...props }, ref) => (
     <ToastPrimitives.Action
       ref={ref}
-      className={`${styles.toastAction} ${className}`}
+      className={`${styles["toast-action"]} ${className}`}
       {...props}
     />
   )
@@ -45,7 +45,7 @@ const ToastClose = React.forwardRef(
   ({ className, ...props }, ref) => (
     <ToastPrimitives.Close
       ref={ref}
-      className={`${styles.toastClose} ${className}`}
+      className={`${styles["toast-close"]} ${className}`}
       {...props}
     >
       <X className="h-4 w-4" />
@@ -58,7 +58,7 @@ const ToastTitle = React.forwardRef(
   ({ className, ...props }, ref) => (
     <ToastPrimitives.Title
       ref={ref}
-      className={`${styles.toastTitle} ${className}`}
+      className={`${styles["toast-title"]} ${className}`}
       {...props}
     />
   )
@@ -69,7 +69,7 @@ const ToastDescription = React.forwardRef(
   ({ className, ...props }, ref) => (
     <ToastPrimitives.Description
       ref={ref}
-      className={`${styles.toastDescription} ${className}`}
+      className={`${styles["toast-description"]} ${className}`}
       {...props}
     />
   )

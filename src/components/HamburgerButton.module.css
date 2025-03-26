@@ -1,0 +1,30 @@
+.hamburger-button {
+  position: relative;
+  z-index: 50;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.hamburger-button:hover {
+  background-color: rgba(100, 100, 100, 0.5);
+}
+
+.hamburger-line {
+  position: absolute;
+  height: 3px;
+  width: 1.25rem;
+  background-color: var(--primary, #ffbf47);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hamburger-line.short {
+  width: 0.5rem;
+}
+
+.hamburger-line.active {
+  background-color: var(--primary-foreground, #ffffff);
+}

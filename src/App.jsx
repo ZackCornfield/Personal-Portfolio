@@ -1,6 +1,6 @@
 import ContactPage from "./pages/ContactPage";
 import HomePage from "./pages/HomePage";
-import Layout from "./components/Layout";
+import Layout from "./pages/Layout";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 

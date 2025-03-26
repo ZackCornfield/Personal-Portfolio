@@ -7,7 +7,7 @@ const Label = React.forwardRef(
     return (
       <LabelPrimitive.Root
         ref={ref}
-        className={`${styles.label} ${className}`} // Combine default class with any additional className passed via props
+        className={`${styles[label]} ${className}`} // Combine default class with any additional className passed via props
         {...props}
       />
     );

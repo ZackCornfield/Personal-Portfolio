@@ -1,0 +1,26 @@
+.dotted-background {
+    position: absolute;
+    display: flex;
+    height: 50rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+  
+  .dotted-background.light {
+    background-image: radial-gradient(black 2px, transparent 2px);
+    background-size: 20px 20px;
+  }
+  
+  .radial-gradient-overlay {
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(229, 231, 235, 0.2); /* Equivalent to bg-primary-200 */
+    mask-image: radial-gradient(ellipse at center, transparent 20%, black);
+  }
+  
