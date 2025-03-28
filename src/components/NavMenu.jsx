@@ -155,7 +155,7 @@ const NavMenu = () => {
                 <ul className={styles["social-links"]}>
                   <li>
                     <a
-                      href="www.linkedin.com/in/zack-cornfield-9a2902236"
+                      href="https://www.linkedin.com/in/zack-cornfield-9a2902236"
                       target="_blank"
                     >
                       LINKEDIN

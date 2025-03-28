@@ -3,8 +3,8 @@
   --background: rgb(240, 239, 239);
   --foreground: hsl(0, 0%, 0%);
 
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(222.2, 84%, 4.9%);
+  --card: rgba(55, 65, 81, 0.08);
+  --card-foreground: rgba(17, 24, 39, 0.8);
 
   --popover: hsl(228, 6%, 16%);
   --popover-foreground: hsla(0, 0%, 100%, 0.541);

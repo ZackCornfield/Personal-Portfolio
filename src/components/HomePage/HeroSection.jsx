@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { DottedBackground } from "../DottedBackground";
 import styles from "./HeroSection.module.css"; // Import external CSS file
 
 const HeroSection = () => {
@@ -62,7 +61,7 @@ const HeroSection = () => {
           custom={2}
         >
           <a
-            href="www.linkedin.com/in/zack-cornfield-9a2902236"
+            href="https://www.linkedin.com/in/zack-cornfield-9a2902236"
             target="_blank"
             className={styles["cta-button"]}
           >
@@ -94,8 +93,6 @@ const HeroSection = () => {
           className={styles["hero-image"]}
         />
       </div>
-
-      <DottedBackground />
     </section>
   );
 };

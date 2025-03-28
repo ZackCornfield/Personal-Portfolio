@@ -106,7 +106,7 @@ const ContactForm = () => {
                 </div>
                 <div className={styles["info-section"]}>
                     <h1 className={styles["info-title"]}>SOCIALS</h1>
-                    <a href="www.linkedin.com/in/zack-cornfield-9a2902236" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/zack-cornfield-9a2902236" target="_blank" rel="noopener noreferrer">
                         LinkedIn
                     </a>
                     <a href="https://github.com/ZackCornfield" target="_blank" rel="noopener noreferrer">

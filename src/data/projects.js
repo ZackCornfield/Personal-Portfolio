@@ -1,20 +1,25 @@
 const projects = [
     {
-        id: "pulse",
-        title: "Pulse",
-        shortDescription: "A social media site built with React, Node.js, and Express.",
-        longDescription: "Pulse is a social media site project created as part of The Odin Project. It allows users to authenticate, create posts, join realms, and interact with other users. The project is built using React for the frontend, Node.js and Express for the backend, and PostgreSQL for data storage.",
-        liveDemo: "https://pulse-demo.com",
-        repo: "https://github.com/yourusername/pulse"
+        title: "CV Architect",
+        description:
+            "A resume builder application designed to help users create professional-looking CVs with ease. It features a drag-and-drop interface, real-time preview, and multiple export options.",
+        image: "/assets/portfolio-logo.svg",
+        skills: ["React", "TypeScript", "Tailwind", "ShadCN", "Zod"],
+        links: {
+            github: "https://github.com/christianrazul/cv-architect",
+            demo: "https://cv-architect.vercel.app/",
+        },
     },
     {
-        id: "mathsplay",
-        title: "Math's Play",
-        shortDescription: "An interactive MR tool for mathematics education.",
-        longDescription: "Math's Play is an educational mixed reality tool designed for Kylie School of Education. It provides teachers with a mini-engine to create interactive math lessons, which students can engage with in both desktop and MR environments.",
-        liveDemo: "https://mathsplay-demo.com",
-        repo: "https://github.com/yourusername/mathsplay"
-    }
+        title: "Another Project",
+        description: "A description of another project goes here.",
+        image: "/assets/portfolio-logo.svg",
+        skills: ["JavaScript", "CSS", "HTML"],
+        links: {
+            github: "https://github.com/example/another-project",
+            demo: "https://another-project.example.com/",
+        },
+    },
 ];
 
 export default projects;

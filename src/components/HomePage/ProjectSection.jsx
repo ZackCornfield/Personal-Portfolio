@@ -3,6 +3,7 @@ import { SkillButton } from "../SkillButton";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 import styles from "./ProjectSection.module.css"; 
+import projects from "../../data/projects.js";
 
 const Project = ({ children }) => {
   const controls = useAnimation();
@@ -55,42 +56,38 @@ export const ProjectSection = () => {
       </div>
 
       <div className={styles["projects-container"]}>
-        <Project>
-          <img
-            src="/assets/img/cv-architect.webp"
-            alt="CV Architect"
-            className={styles["project-image"]}
-          />
-          <div className={styles["project-details"]}>
-            <h3 className={styles["project-title"]}>CV Architect</h3>
-            <p className={styles["project-description"]}>
-              A resume builder application designed to help users create
-              professional-looking CVs with ease.
-            </p>
-            <div className={styles["skills-container"]}>
-              <SkillButton>React</SkillButton>
-              <SkillButton>TypeScript</SkillButton>
-              <SkillButton>Tailwind</SkillButton>
-              <SkillButton>ShadCN</SkillButton>
-              <SkillButton>Zod</SkillButton>
+        {projects.map((project, index) => (
+          <Project key={index}>
+            <img
+              src={project.image}
+              alt={project.title}
+              className={styles["project-image"]}
+            />
+            <div className={styles["project-details"]}>
+              <h3 className={styles["project-title"]}>{project.title}</h3>
+              <p className={styles["project-description"]}>
+                {project.description}
+              </p>
+              <div className={styles["skills-container"]}>
+                {project.skills.map((skill, skillIndex) => (
+                  <SkillButton key={skillIndex}>{skill}</SkillButton>
+                ))}
+              </div>
+              <div className={styles["project-links"]}>
+                <Button className={styles["github-btn"]}>
+                  <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                    GitHub Repo
+                  </a>
+                </Button>
+                <Button className={styles["demo-btn"]}>
+                  <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                  </a>
+                </Button>
+              </div>
             </div>
-            <div className={styles["project-links"]}>
-              <Button className={styles["github-btn"]}>
-                <a href="https://github.com/christianrazul/cv-architect" target="_blank">
-                  GitHub Repo
-                </a>
-              </Button>
-              <Button className={styles["demo-btn"]}>
-                <a href="https://cv-architect.vercel.app/" target="_blank">
-                  Live Demo
-                </a>
-              </Button>
-            </div>
-          </div>
-        </Project>
-
-        {/* Repeat for other projects as needed */}
-        
+          </Project>
+        ))}
       </div>
     </section>
   );

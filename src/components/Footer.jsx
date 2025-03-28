@@ -32,7 +32,7 @@ export const Footer = () => {
                     <div className={styles["separator"]}></div>
                     <ul className={styles["footer-list"]}>
                         <li>
-                            <a href="www.linkedin.com/in/zack-cornfield-9a2902236" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            <a href="https://www.linkedin.com/in/zack-cornfield-9a2902236" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                         </li>
                         <li>
                             <a href="https://github.com/ZackCornfield" target="_blank" rel="noopener noreferrer">GitHub</a>

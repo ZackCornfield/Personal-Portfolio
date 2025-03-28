@@ -1,104 +1,138 @@
 /* HeroSection Styles */
 .hero-section {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 83.33%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%; /* Ensure the section spans the full width */
+  padding: 0 1.5rem; /* Add padding for spacing on smaller screens */
+}
+
+.hero-text-container {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.hero-heading {
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-subheading {
+  width: 75%;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cta-button {
+  font-family: 'Satoshi', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.cta-button:hover {
+  font-weight: bold;  
+  text-decoration: underline;
+}
+
+.hero-image-container {
+  position: relative;
+  z-index: 10;
+  order: 1;
+  min-width: 15rem; /* Ensure a minimum size */
+  max-width: 20rem; /* Ensure a maximum size */
+  width: 100%; /* Allow the container to scale dynamically */
+  overflow: visible; /* Ensure the image is not cut off */
+}
+
+.curtain {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--primary);
+}
+
+.hero-image {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 1rem;
+  border: none; /* Remove the border */
+  box-shadow: none; /* Remove the shadow */
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* Stack the text and image vertically */
+    align-items: center; /* Center-align the content */
+    gap: 1.5rem; /* Reduce the gap between elements */
+    padding: 0 1rem; /* Add padding for smaller screens */
   }
-  
+
   .hero-text-container {
-    position: relative;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    align-items: center; /* Center-align the text */
+    gap: 1rem; /* Reduce the gap between text elements */
   }
-  
+
   .hero-heading {
-    width: 100%;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    line-height: 1.2;
+    font-size: 2rem; /* Reduce font size for smaller screens */
+    text-align: center; /* Center-align the heading */
   }
-  
+
   .hero-subheading {
-    width: 75%;
-    text-align: center;
-    font-family: 'Satoshi', sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.75;
+    width: 100%; /* Allow the subheading to take full width */
+    font-size: 1rem; /* Reduce font size for smaller screens */
+    text-align: center; /* Center-align the subheading */
   }
-  
+
   .cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-direction: column; /* Stack the buttons vertically */
+    gap: 1rem; /* Reduce the gap between buttons */
   }
-  
-  .cta-button {
-    font-family: 'Satoshi', sans-serif;
-    font-size: 1.125rem;
-    font-weight: 500;
-    color: var(--primary);
-    transition: all 0.3s ease-out;
-  }
-  
-  .cta-button:hover {
-    color: var(--accent);
-    text-decoration: underline;
-  }
-  
+
   .hero-image-container {
-    position: relative;
-    z-index: 10;
-    order: 1;
-    width: 10rem;
-    min-width: 15rem;
-    max-width: 20rem;
-    overflow: hidden;
+    max-width: 15rem; /* Reduce the maximum size of the image */
   }
-  
-  .curtain {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--primary);
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 4rem;
+    text-align: left;
   }
-  
-  .hero-image {
-    border-radius: 1rem;
-    border: 2px solid var(--secondary);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+  .hero-subheading {
+    width: 83.33%;
+    font-size: 1.25rem;
+    text-align: left;
   }
-  
-  @media (min-width: 1024px) {
-    .hero-heading {
-      font-size: 4rem;
-      text-align: left;
-    }
-  
-    .hero-subheading {
-      width: 83.33%;
-      font-size: 1.25rem;
-      text-align: left;
-    }
+}
+
+@media (min-width: 1280px) {
+  .hero-heading {
+    font-size: 5rem;
   }
-  
-  @media (min-width: 1280px) {
-    .hero-heading {
-      font-size: 5rem;
-    }
-  
-    .hero-subheading {
-      width: 83.33%;
-      font-size: 1.375rem;
-    }
+
+  .hero-subheading {
+    width: 83.33%;
+    font-size: 1.375rem;
   }
-  
+}

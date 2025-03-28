@@ -1,60 +1,175 @@
 .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 75%;
-    gap: 16px;
-    font-family: "Satoshi", sans-serif;
-  }
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Full width on mobile */
+  width: 100%; 
+  padding: 0 1rem; /* Horizontal padding */
+  box-sizing: border-box;
+  gap: 2rem;
+  font-family: "Satoshi", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem; 
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1rem;
+  box-shadow: 
+      0 10px 25px rgba(0, 0, 0, 0.05), 
+      0 20px 48px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(229, 231, 235, 0.7);
+  width: 100%;
+  box-sizing: border-box;
+} 
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(17, 24, 39, 0.8);
+  transition: color 0.3s ease;
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 0.25rem;
+}
+
+.form-input,
+.form-textarea {
+  font-family: inherit; 
+  width: 100%; /* Full width */
+  max-width: 100%; /* Prevent overflow */
+  box-sizing: border-box; /* Include border in width calculation */
+  height: 52px;
+  border: 1px solid rgba(156, 163, 175, 0.3);
+  font-size: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+  background-color: rgba(249, 250, 251, 0.5);
+}
+
+.form-textarea {
+  height: auto; /* Allow dynamic height for multiline inputs */
+  min-height: 120px; /* Minimum height for text areas */
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.submit-button {
+  width: 100%; /* Full width */
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
   
-  .form-container {
-    width: 100%;
-    max-width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+  /* Gradient background with smooth transition */
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+  background-size: 200% auto;
+  background-position: right center;
   
-  .form-item {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-  }
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
   
-  .form-label {
-    font-size: 1.2rem;
-    font-weight: bold;
+  /* Enhanced transition effects */
+  transition: 
+    transform 0.3s ease, 
+    box-shadow 0.3s ease,
+    background-position 0.5s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  background-position: left center; /* Animate gradient */
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submit-button:focus {
+  outline: none;
+  box-shadow: 
+    0 0 0 3px rgba(59, 130, 246, 0.3),
+    0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: rgba(249, 250, 251, 0.7);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(229, 231, 235, 0.5);
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-title {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(17, 24, 39, 0.7);
+  margin-bottom: 0.5rem;
+}
+
+.info-section a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 500;
+}
+
+.info-section a:hover {
+  color: #2563eb;
+  transform: translateX(4px);
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    max-width: 1200px; /* Limit max width on larger screens */
+    margin: 0 auto; /* Center the form */
+    padding: 0 2rem; /* Slightly more padding on larger screens */
   }
-  
-  .required {
-    color: red;
-  }
-  
-  .form-input {
-    height: 48px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    padding: 8px;
-  }
-  
-  .submit-button {
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
+
+  .form-container,
   .contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+      flex: 1;
   }
-  
-  .info-section {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    padding: 0 0.5rem; /* Less padding on very small screens */
   }
-  
-  .info-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+
+  .form-input {
+    width: 100%; /* Ensure inputs are full width */
+    box-sizing: border-box; /* Include border in width calculation */
   }
-  
+}

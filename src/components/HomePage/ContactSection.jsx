@@ -42,9 +42,8 @@ const ContactSection = () => {
       initial="hidden"
     >
       <div className={styles["contact-content"]}>
-        <h3 className={styles["contact-header"]}>Got a project in mind?</h3>
         <Link to="/contact" className={styles["contact-link"]}>
-          GET IN TOUCH
+          CONTACT ME
         </Link>
       </div>
     </motion.section>

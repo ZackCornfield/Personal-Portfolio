@@ -15,7 +15,6 @@ const technicalSkills = [
     "React.js",
     "Node.js",
     "Express",
-    "MongoDB",
     "HTML",
     "CSS",
 ];
