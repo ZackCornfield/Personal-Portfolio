@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import styles from "./HeroSection.module.css"; // Import external CSS file
+import styles from "./HeroSection.module.css";
 
 const HeroSection = () => {
   const textVariants = {
@@ -18,13 +18,21 @@ const HeroSection = () => {
     }),
   };
 
-  const curtainVariants = {
-    hidden: { height: "100%" },
+  const imageVariants = {
+    hidden: { 
+      scale: 0.7, 
+      opacity: 0,
+      y: 50 
+    },
     visible: {
-      height: "0%",
+      scale: 1,
+      opacity: 1,
+      y: 0,
       transition: {
+        type: "spring",
+        stiffness: 120,
+        damping: 10,
         duration: 0.8,
-        ease: "easeOut",
       },
     },
   };
@@ -81,16 +89,13 @@ const HeroSection = () => {
 
       {/* Picture */}
       <div className={styles["hero-image-container"]}>
-        <motion.div
-          className={styles["curtain"]}
-          initial="hidden"
-          animate="visible"
-          variants={curtainVariants}
-        ></motion.div>
-        <img
+        <motion.img
           src="/assets/profile-icon.png"
           alt="My picture"
           className={styles["hero-image"]}
+          variants={imageVariants}
+          initial="hidden"
+          animate="visible"
         />
       </div>
     </section>

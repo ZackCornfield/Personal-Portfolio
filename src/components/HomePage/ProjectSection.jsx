@@ -56,38 +56,58 @@ export const ProjectSection = () => {
       </div>
 
       <div className={styles["projects-container"]}>
-        {projects.map((project, index) => (
-          <Project key={index}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className={styles["project-image"]}
-            />
-            <div className={styles["project-details"]}>
-              <h3 className={styles["project-title"]}>{project.title}</h3>
-              <p className={styles["project-description"]}>
-                {project.description}
-              </p>
-              <div className={styles["skills-container"]}>
-                {project.skills.map((skill, skillIndex) => (
-                  <SkillButton key={skillIndex}>{skill}</SkillButton>
-                ))}
+        {projects.map((project, index) => {
+          const githubMissing = !project.links.github;
+          const demoMissing = !project.links.demo;
+
+          return (
+            <Project key={index}>
+              <img
+                src={project.image}
+                alt={project.title}
+                className={styles["project-image"]}
+              />
+              <div className={styles["project-details"]}>
+                <h3 className={styles["project-title"]}>{project.title}</h3>
+                <p className={styles["project-description"]}>
+                  {project.description}
+                </p>
+                <div className={styles["skills-container"]}>
+                  {project.skills.map((skill, skillIndex) => (
+                    <SkillButton key={skillIndex}>{skill}</SkillButton>
+                  ))}
+                </div>
+                <div className={styles["project-links"]}>
+                  <Button
+                    className={`${styles["github-btn"]} ${githubMissing ? styles["unavailable"] : ""}`}
+                    disabled={githubMissing}
+                  >
+                    {githubMissing ? "N/A " : (
+                      <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                        GitHub Repo
+                      </a>
+                    )}
+                  </Button>
+                  <Button
+                    className={`${styles["demo-btn"]} ${demoMissing ? styles["unavailable"] : ""}`}
+                    disabled={demoMissing}
+                  >
+                    {demoMissing ? "N/A" : (
+                      <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
+                        Live Demo
+                      </a>
+                    )}
+                  </Button>
+                  <Button className={styles["details-btn"]}>  
+                    <a href={`/projects/${project.id}`}>
+                      Learn More
+                    </a>
+                  </Button>
+                </div>
               </div>
-              <div className={styles["project-links"]}>
-                <Button className={styles["github-btn"]}>
-                  <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                    GitHub Repo
-                  </a>
-                </Button>
-                <Button className={styles["demo-btn"]}>
-                  <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
-                    Live Demo
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </Project>
-        ))}
+            </Project>
+          );
+        })}
       </div>
     </section>
   );
