@@ -3,7 +3,7 @@ import HomePage from "./pages/HomePage";
 import Layout from "./pages/Layout";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
