@@ -99,7 +99,7 @@ export const ProjectSection = () => {
                     )}
                   </Button>
                   <Button className={styles["details-btn"]}>  
-                    <a href={`/projects/${project.id}`}>
+                    <a href={`#/projects/${project.id}`}>
                       Learn More
                     </a>
                   </Button>

@@ -13,7 +13,6 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
-      "/": path.resolve(__dirname, process.env.NODE_ENV === "production" ? "/Personal-Portfolio/" : "/"),
     },
   },
 });
