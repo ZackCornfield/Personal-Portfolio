@@ -99,11 +99,18 @@
 
 .image-container {
     flex: 1;
-    max-width: 500px;
+    min-width: 300px; /* Prevent the container from shrinking too much */
+    max-width: 500px; /* Limit the maximum width */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
 }
 
 .project-image {
-    width: 100%;
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Prevent the image from overflowing */
+    object-fit: cover; /* Ensure the image fills the container without distortion */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

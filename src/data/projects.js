@@ -12,7 +12,7 @@ const projects = [
                 role: "Developer",
             },
             {
-                name: "Thomas Stiles", 
+                name: "Thomas Stiles",
                 role: "Developer",
             },
             {
@@ -37,7 +37,7 @@ const projects = [
             methodology: "Agile/Scrum/Waterfall"
         },
         trailer: {
-            url: "/assets/videos/MathPuzzles_GameplayTrailer.mp4",
+            url: "/assets/videos/ICT302 Mathsplay by PiTech.mp4",   
             thumbnail: "/assets/images/MathsPlay/Nodes.png",
         },
         featuresDeveloped: [
@@ -74,7 +74,7 @@ const projects = [
         
         Client Collaboration
         This project was developed in collaboration with a lecturer in Mathematics and Science Education from Murdoch’s School of Education. The lecturer provided key insights into the needs of educators and students, shaping the design and functionality of the application. Working with a real client gave us valuable experience in understanding and addressing user requirements while ensuring the final product aligned with educational goals.`,
-        skills: ["Unity", "C#"],  
+        skills: ["Unity", "C#"],
         links: {
         },
         image: "/assets/images/MathsPlay/Nodes.png",
@@ -91,7 +91,7 @@ const projects = [
                 role: "Developer",
             },
             {
-                name: "Thomas Stiles", 
+                name: "Thomas Stiles",
                 role: "Developer",
             },
             {
@@ -109,7 +109,7 @@ const projects = [
         },
         trailer: {
             url: "/assets/videos/CobaltTrailer.mp4",
-            thumbnail: "/assets/images/MurdochWalkthrough/Environment.png", 
+            thumbnail: "/assets/images/MurdochWalkthrough/Environment.png",
         },
         featuresDeveloped: [
             {
@@ -166,7 +166,7 @@ const projects = [
             }
         ],
         projectPlanning: {
-            tools: ["Trello", "Git/GitHub", "Doxygen"],    
+            tools: ["Trello", "Git/GitHub", "Doxygen"],
             methodology: "Agile/Scrum",
         },
         featuresDeveloped: [
@@ -187,7 +187,7 @@ const projects = [
             }
         ],
         fullDescription: `This application was created using java SE 8 and the JavaFX library for GUI rendering and handling. The purpose was to create a CRUD application designed using OOP. The application supported the serialization of magazines and their customers so they could be loaded and saved from a file. The application also supports limited multithreading when processing the view information.`,
-        skills: ["Java", "JavaFX"],  
+        skills: ["Java", "JavaFX"],
         links: {
         },
         image: "/assets/images/MagazineService_Create.png",
@@ -195,7 +195,7 @@ const projects = [
     {
         id: "math-puzzles",
         title: "Math Puzzles",
-        type: "University/Client Project",  
+        type: "University/Client Project",
         description: "Math Games is an MR and PC game developed using Unity that is aimed at helping teachers and students to both teach and learn the more basic math concepts for those in middle school and similar ages.",
         lastUpdated: "2024",
         developmentTeam: [
@@ -204,7 +204,7 @@ const projects = [
                 role: "Developer",
             },
             {
-                name: "Thomas Stiles", 
+                name: "Thomas Stiles",
                 role: "Developer",
             },
             {
@@ -261,10 +261,110 @@ const projects = [
             }
         ],
         fullDescription: `Math Games is an MR and PC game developed using Unity that is aimed at helping teachers and students to both teach and learn the more basic math concepts for those in middle school and similar ages. During the development of this project, we worked with a client who was a math professor to make sure that the project aligned with their needs and wants for the product. Rather than having complete freedom on what we wanted from this project it required us to learn how to work with external clients and work through compromises on both ends.`,
-        skills: ["Unity", "C#"],  
+        skills: ["Unity", "C#"],
         links: {
         },
         image: "/assets/images/MathPuzzles_VolumePuzzle.png",
+    },
+    {
+        id: "pulse",
+        title: "Pulse",
+        type: "Personal Project",
+        description: "A full-stack social media platform where users can create posts, follow people, like content, and interact with others. Built using React, Node.js, and Express.",
+        lastUpdated: "2025",
+        developmentTeam: [
+            {
+                name: "Zack Cornfield",
+                role: "Developer",
+            }
+        ],
+        projectPlanning: {
+            tools: ["Trello", "Git/GitHub"],
+            methodology: "Agile/Kanban"
+        },
+        featuresDeveloped: [
+            {
+                name: "User Authentication",
+                description: "Implemented secure user authentication using JWT and bcrypt for password hashing. Users can sign up, log in, and manage their accounts securely.",
+                image: "/assets/images/Pulse/Auth.png"
+            },
+            {
+                name: "Post and Feed System",
+                description: "Developed a dynamic post system where users can create, edit, and delete posts. A real-time feed updates with new content from following.",
+                image: "/assets/images/Pulse/Post.png"
+            },
+            {
+                name: "Follow System",
+                description: "Built a follow system allowing users to follow and unfollow each other, view followings' posts, and manage following.",
+                image: "/assets/images/Pulse/Follow.png"
+            },
+            {
+                name: "Likes and Interactions",
+                description: "Added the ability to like posts, providing engagement features similar to major social media platforms.",
+                image: "/assets/images/Pulse/Like.png"
+            }
+        ],
+        fullDescription: `"Pulse" is a modern social media application built with React, Node.js, and Express, allowing users to connect, share, and interact. Key features include:
+    
+            • User Authentication: Secure login and registration using JWT.
+            • Dynamic Feed: Users can create and view posts from friends in real-time.
+            • Follow System: Connect with others through a follow system.
+            • Like System: Engage with posts by liking content.
+    
+            This project was a hands-on experience in full-stack web development, focusing on backend API design, database structuring, and front-end interactivity. It serves as a foundational project in modern web technologies, demonstrating proficiency in React and Node.js.`,
+        skills: ["React", "Node.js", "Express", "MongoDB", "JWT", "TailWind CSS", "HTML"],
+        links: {
+            github: "https://github.com/ZackCornfield/Pulse",
+            demo: "https://pulse-1-7lvu.onrender.com/"
+        },
+        image: "/assets/images/Pulse/Auth.png",
+    },
+    {
+        id: "portfolio",
+        title: "Personal Portfolio",
+        type: "Personal Project",
+        description: "A modern, responsive portfolio website built with React to showcase my projects, skills, and experience. Designed for easy navigation and scalability.",
+        lastUpdated: "2025",
+        developmentTeam: [
+            {
+                name: "Zack Cornfield",
+                role: "Developer",
+            }
+        ],
+        projectPlanning: {
+            tools: ["Git/GitHub"],
+            methodology: "Iterative Development"
+        },
+        featuresDeveloped: [
+            {
+                name: "Dynamic Project Pages",
+                description: "Designed the portfolio to feature individual project pages with detailed information. This allows for a more detailed breakdown of each project with images, links, and descriptions.",
+                image: "/assets/images/Portfolio/Project-Pages.png"
+            },
+            {
+                name: "Responsive Design",
+                description: "Implemented a fully responsive layout to ensure the portfolio looks great on all devices, from desktops to mobile screens.",
+                image: "/assets/images/Portfolio/Responsive.png"
+            },
+            {
+                name: "Smooth Navigation",
+                description: "Developed a clean and intuitive navigation system with smooth scrolling and animated transitions between sections.",
+                image: "/assets/images/Portfolio/Navigation.png"
+            },
+        ],
+        fullDescription: `"This personal portfolio is a modern, responsive web application built with React. It serves as a professional showcase of my projects, skills, and experience. 
+
+        Key Features:
+        • Dynamic Project Pages: Each project has its own dedicated page for detailed descriptions.
+        • Responsive Design: Ensures a great user experience on all devices.
+        • Smooth Navigation: Easy access to different sections with animated transitions.
+
+        The portfolio is continuously updated to reflect my latest projects and skills, providing a centralized space for potential employers and collaborators to explore my work."`,
+        skills: ["React", "JavaScript", "CSS", "HTML"],  
+        links: {
+            github: "https://github.com/ZackCornfield/Personal-Portfolio",
+        },
+        image: "/assets/images/Portfolio/Projects.png",   
     },
 ];
 
