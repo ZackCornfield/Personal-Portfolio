@@ -3,11 +3,11 @@ import HomePage from "./pages/HomePage";
 import Layout from "./pages/Layout";
 import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter basename="/Personal-Portfolio">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />}></Route>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/projects/:projectId" element={<ProjectDetailsPage />}></Route>
         </Route>
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
