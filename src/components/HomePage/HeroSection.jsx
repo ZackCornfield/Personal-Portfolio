@@ -90,7 +90,7 @@ const HeroSection = () => {
       {/* Picture */}
       <div className={styles["hero-image-container"]}>
         <motion.img
-          src="/assets/profile-icon.png"
+          src="./assets/profile-icon.png"
           alt="My picture"
           className={styles["hero-image"]}
           variants={imageVariants}
