@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://ZackCornfield.github.io/Personal-Portfolio", 
+  "homepage": "https://ZackCornfield.github.io/Personal-Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

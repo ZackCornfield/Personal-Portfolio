@@ -37,7 +37,7 @@ const projects = [
             methodology: "Agile/Scrum/Waterfall"
         },
         trailer: {
-            url: "/assets/videos/ICT302 Mathsplay by PiTech.mp4",   
+            url: "https://youtu.be/vDR3iOcPd4Y",   
             thumbnail: "/assets/images/MathsPlay/Nodes.png",
         },
         featuresDeveloped: [
@@ -108,7 +108,7 @@ const projects = [
             methodology: "Agile/Scrum/Waterfall"
         },
         trailer: {
-            url: "/assets/videos/CobaltTrailer.mp4",
+            url: "https://youtu.be/OreWxcXUL-E",
             thumbnail: "/assets/images/MurdochWalkthrough/Environment.png",
         },
         featuresDeveloped: [
@@ -221,7 +221,7 @@ const projects = [
             methodology: "Agile/Scrum/Waterfall"
         },
         trailer: {
-            url: "/assets/videos/MathPuzzles_GameplayTrailer.mp4",
+            url: "https://youtu.be/WtQGdN8Rjbw",
             thumbnail: "/assets/images/MathPuzzles_VolumePuzzle.png",
         },
         featuresDeveloped: [
