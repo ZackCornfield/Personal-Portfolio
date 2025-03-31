@@ -1,7 +1,7 @@
 {
-  "homepage": "https://ZackCornfield.github.io/Personal-Portfolio",
+  "homepage": "https://zackcornfield.github.io/Personal-Portfolio",
   "name": "personal-portfolio",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
