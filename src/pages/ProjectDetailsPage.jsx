@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import projects from "../data/projects";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
@@ -7,6 +8,10 @@ import styles from "./ProjectDetailsPage.module.css"; // Import the CSS module
 const ProjectDetailsPage = () => {
   const { projectId } = useParams();
   const project = projects.find((p) => p.id === projectId);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }, []);
 
   if (!project) {
     return (
@@ -39,9 +44,7 @@ const ProjectDetailsPage = () => {
                 GitHub
               </button>
             ) : (
-              <button
-                className={styles.button + " " + styles.unavailable}
-              >
+              <button className={styles.button + " " + styles.unavailable}>
                 N/A
               </button>
             )}
@@ -53,9 +56,7 @@ const ProjectDetailsPage = () => {
                 <ExternalLink size={20} /> Live Demo
               </button>
             ) : (
-              <button
-                className={styles.button + " " + styles.unavailable}
-              >
+              <button className={styles.button + " " + styles.unavailable}>
                 N/A
               </button>
             )}
@@ -101,11 +102,11 @@ const ProjectDetailsPage = () => {
           <h2>Project Planning and Tools</h2>
           <div className={styles.planning}>
             <p>
-              <strong>Methodology:</strong> {project.projectPlanning.methodology}
+              <strong>Methodology:</strong>{" "}
+              {project.projectPlanning.methodology}
             </p>
             <p>
-              <strong>Tools:</strong>{" "}
-              {project.projectPlanning.tools.join(", ")}
+              <strong>Tools:</strong> {project.projectPlanning.tools.join(", ")}
             </p>
           </div>
         </section>

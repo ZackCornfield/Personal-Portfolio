@@ -2,7 +2,7 @@ import { Button } from "../ui/Button";
 import { SkillButton } from "../SkillButton";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
-import styles from "./ProjectSection.module.css"; 
+import styles from "./ProjectSection.module.css";
 import projects from "../../data/projects.js";
 
 const Project = ({ children }) => {
@@ -79,29 +79,43 @@ export const ProjectSection = () => {
                 </div>
                 <div className={styles["project-links"]}>
                   <Button
-                    className={`${styles["github-btn"]} ${githubMissing ? styles["unavailable"] : ""}`}
+                    className={`${styles["github-btn"]} ${
+                      githubMissing ? styles["unavailable"] : ""
+                    }`}
                     disabled={githubMissing}
                   >
-                    {githubMissing ? "N/A " : (
-                      <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                    {githubMissing ? (
+                      "N/A "
+                    ) : (
+                      <a
+                        href={project.links.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         GitHub Repo
                       </a>
                     )}
                   </Button>
                   <Button
-                    className={`${styles["demo-btn"]} ${demoMissing ? styles["unavailable"] : ""}`}
+                    className={`${styles["demo-btn"]} ${
+                      demoMissing ? styles["unavailable"] : ""
+                    }`}
                     disabled={demoMissing}
                   >
-                    {demoMissing ? "N/A" : (
-                      <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
+                    {demoMissing ? (
+                      "N/A"
+                    ) : (
+                      <a
+                        href={project.links.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         Live Demo
                       </a>
                     )}
                   </Button>
-                  <Button className={styles["details-btn"]}>  
-                    <a href={`#/projects/${project.id}`}>
-                      Learn More
-                    </a>
+                  <Button className={styles["details-btn"]}>
+                    <a href={`#/projects/${project.id}`}>Learn More</a>
                   </Button>
                 </div>
               </div>

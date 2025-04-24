@@ -1,6 +1,6 @@
 /* Base styles */
 :root {
-  --background: rgb(240, 239, 239);
+  --background: linear-gradient(red, yellow);
   --foreground: hsl(0, 0%, 0%);
 
   --card: rgba(55, 65, 81, 0.08);
@@ -30,7 +30,7 @@
 
   --radius: 0.5rem;
 
-  --font-satoshi: "Satoshi", sans-serif;  
+  --font-satoshi: "Satoshi", sans-serif;
   --font-overused: "OverusedGrotesk", sans-serif;
 }
 
@@ -48,27 +48,31 @@ body {
 /* Font Faces */
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("/fonts/overused-grotesk/OverusedGrotesk-Medium.ttf") format("truetype");
+  src: url("/fonts/overused-grotesk/OverusedGrotesk-Medium.ttf")
+    format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("/fonts/overused-grotesk/OverusedGrotesk-Bold.ttf") format("truetype");
+  src: url("/fonts/overused-grotesk/OverusedGrotesk-Bold.ttf")
+    format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("/fonts/overused-grotesk/OverusedGrotesk-SemiBold.ttf") format("truetype");
+  src: url("/fonts/overused-grotesk/OverusedGrotesk-SemiBold.ttf")
+    format("truetype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("/fonts/overused-grotesk/OverusedGrotesk-Light.ttf") format("truetype");
+  src: url("/fonts/overused-grotesk/OverusedGrotesk-Light.ttf")
+    format("truetype");
   font-weight: lighter;
   font-style: normal;
 }
