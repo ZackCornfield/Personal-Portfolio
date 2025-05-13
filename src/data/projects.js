@@ -472,6 +472,62 @@ const projects = [
     },
     image: "./assets/images/Swipe-n-Dine/MatchUp.png",
   },
+  {
+    id: "guess-that-super",
+    title: "Guess That Super",
+    type: "Interactive Web Game",
+    description:
+      "A Wordle-inspired superhero guessing game using the Superhero API with dynamic feedback mechanics.",
+    lastUpdated: "2025-05-13",
+    developmentTeam: [
+      {
+        name: "Zack Cornfield",
+        role: "Full-stack Developer",
+      },
+      {
+        name: "Adam Dabre",
+        role: "Full-stack Developer",
+      },
+    ],
+    projectPlanning: {
+      tools: ["Trello"],
+      methodology: "Agile",
+    },
+    featuresDeveloped: [
+      {
+        name: "Dynamic Comparison Engine",
+        description:
+          "Implemented attribute-based feedback system showing exact matches, close matches, and misses along with higher and lower across 10+ character attributes.",
+        image: "./assets/images/guess-that-super/guessing.png",
+      },
+      {
+        name: "Proxy API Layer",
+        description:
+          "Built Node.js proxy server to securely handle SuperheroAPI requests, protecting API keys and enabling CORS for the GitHub Pages frontend.",
+        image: "./assets/images/guess-that-super/searching.png",
+      },
+      {
+        name: "Comic Book UI System",
+        description:
+          "Created custom comic-inspired design system with dynamic shadows and responsive layouts.",
+        image: "./assets/images/guess-that-super/ui.png",
+      },
+      {
+        name: "Difficulty Modes",
+        description:
+          "Implemented two difficulty modes: Casual and Super Fan, each with varying number of hints.",
+        image: "./assets/images/guess-that-super/difficulty.png",
+      },
+    ],
+    fullDescription:
+      "Guess That Super! is a daily superhero guessing game where players have 10 attempts to identify a mystery character from DC or Marvel universes. Each guess provides comparative feedback across powerstats, biography details, and physical attributes. The project overcame API limitations through a custom proxy server and implements client-side caching to minimize network requests. The game features two difficulty modes (Casual and Super Fan) with different hint systems, and includes a shareable results feature similar to Wordle.",
+    skills: ["React.js", "Node.js", "REST API", "Express.js", "CSS", "HTML"],
+    links: {
+      github: "https://github.com/AdamDabre/Guess-That-Super",
+      demo: "https://adamdabre.github.io/Guess-That-Super/",
+    },
+    image: "./assets/images/guess-that-super/ui.png",
+  },
 ];
 
 /* Template for new projects 
