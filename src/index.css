@@ -1,6 +1,6 @@
 /* Base styles */
 :root {
-  --background: linear-gradient(red, yellow);
+  --background: rgb(240, 240, 240);
   --foreground: hsl(0, 0%, 0%);
 
   --card: rgba(55, 65, 81, 0.08);
