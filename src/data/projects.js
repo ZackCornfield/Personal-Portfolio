@@ -482,11 +482,11 @@ const projects = [
     developmentTeam: [
       {
         name: "Zack Cornfield",
-        role: "Full-stack Developer",
+        role: "Developer",
       },
       {
         name: "Adam Dabre",
-        role: "Full-stack Developer",
+        role: "Developer",
       },
     ],
     projectPlanning: {
@@ -527,6 +527,76 @@ const projects = [
       demo: "https://adamdabre.github.io/Guess-That-Super/",
     },
     image: "./assets/images/guess-that-super/ui.png",
+  },
+  {
+    id: "expense-tracker",
+    title: "Expense Tracker",
+    type: "Web Application",
+    description:
+      "A full-stack web app for tracking income and expenses, visualizing financial data, and exporting reports.",
+    lastUpdated: "2025-05-23",
+    developmentTeam: [
+      {
+        name: "Zack Cornfield",
+        role: "Developer",
+      },
+      {
+        name: "Adam Dabre",
+        role: "Developer",
+      },
+    ],
+    projectPlanning: {
+      tools: ["Trello"],
+      methodology: "Agile",
+    },
+    featuresDeveloped: [
+      {
+        name: "Income & Expense Management",
+        description:
+          "Add, delete, and re-add income and expense transactions with category icons and dates.",
+        image: "./assets/images/Expense-Tracker/income.png",
+      },
+      {
+        name: "Excel Export",
+        description:
+          "Download filtered income or expense data as Excel files with custom date ranges or periods.",
+        image: "./assets/images/Expense-Tracker/excel.png",
+      },
+      {
+        name: "Dashboard & Analytics",
+        description:
+          "Visualize your financial overview, recent transactions, and trends with charts and summaries.",
+        image: "./assets/images/Expense-Tracker/dashboard.png",
+      },
+      {
+        name: "Authentication",
+        description:
+          "Secure user authentication with JWT, allowing users to manage their own data.",
+        image: "./assets/images/Expense-Tracker/auth.png",
+      },
+      {
+        name: "Responsive Design",
+        description:
+          "Mobile-first design with a responsive layout for seamless use on all devices.",
+        image: "./assets/images/Expense-Tracker/responsive.png",
+      },
+    ],
+    fullDescription: `Expense Tracker is a MERN stack web application designed to help users manage their personal finances. Users can add, delete, and re-add income and expense transactions, filter by date or period, and download their data as Excel files. The dashboard provides a comprehensive overview of financial status, recent activity, and trends, with interactive charts and summaries. The project uses React, Node.js, Express, MongoDB, and Tailwind CSS, and follows Agile development practices.`,
+    skills: [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Tailwind CSS",
+      "REST API",
+      "Excel Export",
+      "Authentication",
+    ],
+    links: {
+      github: "https://github.com/AdamDabre/Expense-Tracker/tree/main",
+      demo: "https://expense-tracker-1-gl7n.onrender.com",
+    },
+    image: "./assets/images/Expense-Tracker/cover.png",
   },
 ];
 
