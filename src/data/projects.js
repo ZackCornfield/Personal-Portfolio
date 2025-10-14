@@ -598,6 +598,73 @@ const projects = [
     },
     image: "./assets/images/Expense-Tracker/cover.png",
   },
+  {
+    id: "blogapp",
+    title: "Blog App",
+    type: "Web Application",
+    description:
+      "A full-stack blogging platform where users can create, edit, and delete posts, interact with other users through likes and comments, and explore a global feed.",
+    lastUpdated: "2025-10-14",
+    developmentTeam: [
+      {
+        name: "Zack Cornfield",
+        role: "Full-Stack Developer",
+      },
+    ],
+    projectPlanning: {
+      tools: ["Trello"],
+      methodology: "Agile",
+    },
+    featuresDeveloped: [
+      {
+        name: "User Authentication",
+        description:
+          "Implemented secure user authentication with JWT for login and registration.",
+        image: "./assets/images/BlogApp/login.png",
+      },
+      {
+        name: "Post Management",
+        description:
+          "Users can create, edit, and delete their own posts with a rich text editor.",
+        image: "./assets/images/BlogApp/add-post.png",
+      },
+      {
+        name: "Global Feed",
+        description:
+          "A feed displaying posts from all users with pagination support.",
+        image: "./assets/images/BlogApp/global-feed.png",
+      },
+      {
+        name: "Likes and Comments",
+        description:
+          "Users can like/unlike posts and add comments, with real-time updates.",
+        image: "./assets/images/BlogApp/post-details.png",
+      },
+      {
+        name: "Responsive Design",
+        description:
+          "The application is fully responsive and works seamlessly on desktop and mobile devices.",
+        image: "./assets/images/BlogApp/responsive.png",
+      },
+    ],
+    fullDescription: `BlogApp is a full-stack web application designed to provide a seamless blogging experience. Users can register and log in securely, create and manage their own posts, and interact with others through likes and comments. The application features a global feed for exploring posts from all users, as well as a personalized dashboard for managing individual posts. Built with Angular for the frontend and Node.js with Prisma for the backend, BlogApp is a modern, responsive, and feature-rich platform.`,
+    skills: [
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "Prisma",
+      "PostgreSQL",
+      "HTML",
+      "CSS",
+      "TailwindCSS",
+    ],
+    links: {
+      github: "https://github.com/ZackCornfield/BlogApp",
+      demo: "https://blogapp-frontend-ajno.onrender.com/",
+    },
+    image: "./assets/images/BlogApp/posts.png",
+  },
 ];
 
 /* Template for new projects 

@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import projects from "../data/projects";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
-import styles from "./ProjectDetailsPage.module.css"; // Import the CSS module
+import styles from "./ProjectDetailsPage.module.css";
 
 const ProjectDetailsPage = () => {
   const { projectId } = useParams();
@@ -32,7 +32,7 @@ const ProjectDetailsPage = () => {
       </button>
 
       <div className={styles.header}>
-        <div>
+        <div className={styles["header-content"]}>
           <h1 className={styles["project-title"]}>{project.title}</h1>
           <p className={styles.description}>{project.fullDescription}</p>
           <div className={styles.links}>
@@ -41,7 +41,7 @@ const ProjectDetailsPage = () => {
                 className={styles.button}
                 onClick={() => window.open(project.links.github, "_blank")}
               >
-                GitHub
+                <Github size={16} /> GitHub
               </button>
             ) : (
               <button className={styles.button + " " + styles.unavailable}>
@@ -53,7 +53,7 @@ const ProjectDetailsPage = () => {
                 className={`${styles.button} ${styles.demo}`}
                 onClick={() => window.open(project.links.demo, "_blank")}
               >
-                <ExternalLink size={20} /> Live Demo
+                <ExternalLink size={16} /> Live Demo
               </button>
             ) : (
               <button className={styles.button + " " + styles.unavailable}>
