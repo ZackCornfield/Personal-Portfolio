@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import projects from "../data/projects";
 import { ArrowLeft, ExternalLink, Github } from "lucide-react";
 import styles from "./ProjectDetailsPage.module.css";
+import { SkillButton } from "../components/SkillButton";
 
 const ProjectDetailsPage = () => {
   const { projectId } = useParams();
@@ -86,6 +87,15 @@ const ProjectDetailsPage = () => {
               day: "numeric",
             })}
           </p>
+        </section>
+
+        <section>
+          <h2>Technologies Used</h2>
+          <div className={styles["skills-container"]}>
+            {project.skills.map((skill, index) => (
+              <SkillButton key={index}>{skill}</SkillButton>
+            ))}
+          </div>
         </section>
 
         <section>

@@ -80,6 +80,13 @@
   padding-right: 8px; /* Add spacing for scrollbar */
 }
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 12px;
+}
+
 .links {
   display: flex;
   gap: 12px;

@@ -665,6 +665,70 @@ const projects = [
     },
     image: "./assets/images/BlogApp/posts.png",
   },
+  {
+    id: "taskflow",
+    title: "TaskFlow",
+    type: "Web Application",
+    description:
+      "TaskFlow is a task management application that allows users to manage boards, tasks, and team members efficiently. It is designed to be scalable, secure, and user-friendly.",
+    lastUpdated: "2025-12-09",
+    developmentTeam: [
+      {
+        name: "Zack Cornfield",
+        role: "Full-Stack Developer",
+      },
+    ],
+    projectPlanning: {
+      tools: ["Trello", "Git/GitHub"],
+      methodology: "Agile",
+    },
+    featuresDeveloped: [
+      {
+        name: "Board Management",
+        description:
+          "Create, update, and delete boards to organize tasks effectively.",
+        image: "./assets/images/TaskFlow/boards.png",
+      },
+      {
+        name: "Task Management",
+        description:
+          "Add, edit, and delete tasks within boards, with support for task tags to mark things like priority or status.",
+        image: "./assets/images/TaskFlow/task-management.png",
+      },
+      {
+        name: "Member Management",
+        description:
+          "Add and manage team members with different roles and permissions.",
+        image: "./assets/images/TaskFlow/member-management.png",
+      },
+      {
+        name: "JWT Authentication & Authorization",
+        description:
+          "Secure user authentication using JSON Web Tokens (JWT) for both authentication and authorization.",
+        image: "./assets/images/TaskFlow/authentication.png",
+      },
+      {
+        name: "Responsive Design",
+        description: "A fully responsive UI for seamless use across devices.",
+        image: "./assets/images/TaskFlow/responsive.png",
+      },
+    ],
+    fullDescription:
+      "TaskFlow is a comprehensive task management application built with Angular for the frontend and ASP.NET Core for the backend. It allows users to manage boards, tasks, and team members efficiently. The application features a responsive design, secure authentication using JWT, and a RESTful API for dynamic data handling. TaskFlow is designed to be scalable, secure, and user-friendly, making it suitable for both small teams and large organizations.",
+    skills: [
+      "Angular",
+      "ASP.NET Core",
+      "Entity Framework Core",
+      "PostgreSQL",
+      "TypeScript",
+      "Responsive Design",
+    ],
+    links: {
+      github: "https://github.com/ZackCornfield/TaskFlow",
+      demo: "https://taskflow-1-5p62.onrender.com/",
+    },
+    image: "./assets/images/TaskFlow/board.png",
+  },
 ];
 
 /* Template for new projects 
