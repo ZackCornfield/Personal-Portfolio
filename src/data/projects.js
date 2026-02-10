@@ -729,6 +729,69 @@ const projects = [
     },
     image: "./assets/images/TaskFlow/board.png",
   },
+  {
+    id: "feature-flag-control-panel",
+    title: "Feature Flag Control Panel",
+    type: "Web Application",
+    description:
+      "A web application for managing feature flags, enabling dynamic control over application features without requiring redeployment.",
+    lastUpdated: "2026-02-10",
+    developmentTeam: [
+      {
+        name: "Zack Cornfield",
+        role: "Full-Stack Developer",
+      },
+    ],
+    projectPlanning: {
+      tools: ["Visual Studio Code", "Git"],
+      methodology: "Agile",
+    },
+    featuresDeveloped: [
+      {
+        name: "Global and Override Dashboard",
+        description:
+          "A comprehensive set of dashboards that allows users to view and manage global feature flags, as well as override feature flag states for specific users or groups.",
+        image: "./assets/images/Feature-Flag/dashboard.png",
+      },
+      {
+        name: "Feature Flag Management",
+        description:
+          "Allows users to create, update, and toggle feature flags dynamically.",
+        image: "./assets/images/Feature-Flag/feature-flag-management.png",
+      },
+      {
+        name: "User Authentication",
+        description:
+          "Secure user authentication with JWT-based token management.",
+        image: "./assets/images/Feature-Flag/user-authentication.png",
+      },
+      {
+        name: "Override System",
+        description: "Enables users to override feature flag states for users.",
+        image: "./assets/images/Feature-Flag/override-system.png",
+      },
+      {
+        name: "Demo Page",
+        description:
+          "A demo page that simulates the application of feature flags in a real-world scenario, allowing users to see the impact of their changes in real-time.",
+        image: "./assets/images/Feature-Flag/demo-page.png",
+      },
+    ],
+    fullDescription: `The Feature Flag Control Panel is a robust web application designed to provide dynamic control over application features. Built with a .NET backend and an Angular frontend, the application allows teams to manage feature flags, enabling or disabling features without requiring code redeployment. The project leverages Docker for containerization, ensuring seamless deployment and scalability. Key features include user authentication, role-based access control, and a user-friendly interface for managing feature flags.`,
+    skills: [
+      "C#",
+      ".NET",
+      "Angular",
+      "Entity Framework",
+      "JWT Authentication",
+      "Agile Development",
+    ],
+    links: {
+      github: "https://github.com/ZackCornfield/Feature-Flag-Control-Panel",
+      demo: "https://feature-flag-control-panel-1.onrender.com",
+    },
+    image: "./assets/images/Feature-Flag/dashboard.png",
+  },
 ];
 
 /* Template for new projects 
